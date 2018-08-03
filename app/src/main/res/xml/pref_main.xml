@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="Api Settings">
+        <EditTextPreference
+            android:defaultValue="@string/default_api_val"
+            android:key="@string/key_api_base"
+            android:summary="@string/summary_api_base"
+            android:title="@string/title_api_base" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Admin Settings">
+
+        <com.codeian.employeeattendance.Helpers.EncryptedEditTextPreference
+            android:defaultValue="@string/default_admin_pass"
+            android:key="@string/key_admin_pass"
+            android:password="true"
+            android:hint="Leave empty to keep old password"
+            android:summary="@string/summary_admin_pass"
+            android:title="@string/title_admin_pass" />
+
+        <Preference
+            android:key="@string/key_manage_user"
+            android:summary="Set and update &quot;Fingerprint &amp; NFC info&quot; "
+            android:title="Manage User Data" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_header_about">
+
+        <Preference
+            android:selectable="false"
+            android:summary="@string/summary_about" />
+
+        <Preference
+            android:summary="@string/app_version"
+            android:title="@string/title_version" />
+
+        <Preference
+            android:key="@string/key_send_feedback"
+            android:summary="@string/summary_support"
+            android:title="@string/title_send_feedback" />
+
+        <!-- preference opens url in browser -->
+
+        <Preference android:title="@string/privacy_policy">
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="@string/url_privacy" />
+        </Preference>
+
+    </PreferenceCategory>
+</PreferenceScreen>

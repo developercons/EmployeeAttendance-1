@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/employee_detail"
+    style="?android:attr/textAppearanceLarge"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp"
+    android:textIsSelectable="true"
+    tools:context=".EmployeeDetailFragment"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardProfile"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        card_view:contentPadding="16dp"
+        card_view:cardCornerRadius="4dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:src="@drawable/ic_account_circle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="8dp"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/userName"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                    android:text="Hello Card"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <TextView
+                    android:id="@+id/userEmail"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                    android:text="email@email.com"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end">
+                <ImageView
+                    android:visibility="gone"
+                    android:src="@drawable/ic_fp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:src="@drawable/ic_nfc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardHistory"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        card_view:contentPadding="16dp"
+        card_view:cardCornerRadius="4dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+                android:text="Today's History:"
+                android:textColor="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="0dp"
+                android:orientation="horizontal">
+
+                <com.github.vipulasri.timelineview.TimelineView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    app:marker="@drawable/ic_radio_button_checked"
+                    app:markerSize="16dp"
+                    app:lineSize="2dp"
+                    app:line="@color/offWhite"
+                    app:linePadding="2dp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/eName"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                        android:text="Checked In"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:id="@+id/eTime"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                        android:text="09:00 AM"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="0dp"
+                android:orientation="horizontal">
+
+                <com.github.vipulasri.timelineview.TimelineView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    app:marker="@drawable/ic_radio_button_checked"
+                    app:markerSize="16dp"
+                    app:lineSize="2dp"
+                    app:line="@color/offWhite"
+                    app:linePadding="2dp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/eName2"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                        android:text="Break Start"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:id="@+id/eTime2"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                        android:text="01:00 PM"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="0dp"
+                android:orientation="horizontal">
+
+                <com.github.vipulasri.timelineview.TimelineView
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    app:marker="@drawable/ic_radio_button_checked"
+                    app:markerSize="16dp"
+                    app:lineSize="2dp"
+                    app:line="@color/offWhite"
+                    app:linePadding="2dp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/eName3"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                        android:text="Break End"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:id="@+id/eTime3"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                        android:text="02:00 PM"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="0dp"
+                android:orientation="horizontal">
+
+                <com.github.vipulasri.timelineview.TimelineView
+                    android:id="@+id/time_marker"
+                    android:layout_width="40dp"
+                    android:layout_height="match_parent"
+                    app:marker="@drawable/ic_radio_button_checked"
+                    app:markerSize="16dp"
+                    app:lineSize="2dp"
+                    app:line="@color/offWhite"
+                    app:linePadding="2dp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/eName4"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Title"
+                        android:text="Checked Out"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                    <TextView
+                        android:id="@+id/eTime4"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                        android:text="05:00 PM"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardAction"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:contentPadding="16dp"
+        card_view:cardCornerRadius="4dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Body2"
+                android:text="Available Actions:"
+                android:textColor="@color/colorAccent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"/>
+
+            <Button
+                android:theme="@style/BtnGreen"
+                android:textSize="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorWhite"
+                android:text="Check In"/>
+            <Button
+                android:theme="@style/BtnYellow"
+                android:textColor="@color/colorWhite"
+                android:textSize="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Break Start"/>
+            <Button
+                android:theme="@style/BtnYellow"
+                android:textColor="@color/colorWhite"
+                android:textSize="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Break End"/>
+
+            <Button
+                android:theme="@style/BtnRed"
+                android:textColor="@color/colorWhite"
+                android:textSize="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Check Out"/>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

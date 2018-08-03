@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">EmployeeAttendance</string>
+    <string name="title_employee_detail">Employee Detail</string>
+    <string name="search_hint">Search...</string>
+    <string name="action_search">Search now</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+
+    <string name="default_admin_pass"></string>
+    <string name="default_api_val"></string>
+
+    <string name="title_api_base">Set Api Base URL</string>
+    <string name="title_admin_pass">Set Password</string>
+
+    <string name="summary_upload_over_wifi">Upload the videos when wifi is available</string>
+    <string name="title_upload_quality">Upload Quality</string>
+    <string name="summary_upload_video_quality">Specify video quality for uploads</string>
+    <string name="pref_title_notifications">Notifications</string>
+    <string name="summary_choose_ringtone">Choose notification sound</string>
+    <string name="pref_header_about">About Codeian</string>
+    <string name="summary_about">we a complete package of full it solution. web dev, web designer, cross platform app developer, game developer, graphic designer and anything else you can imagine is in our team. We call us mighty wizards who can accomplish anything!</string>
+    <string name="app_version">3.5</string>
+    <string name="summary_support">Got any queries? We are happy to help!</string>
+    <string name="title_send_feedback">Send Feedback</string>
+    <string name="privacy_policy">Visit Developer</string>
+    <string name="url_privacy">https://www.codeian.xyz</string>
+    <string name="title_version">Version</string>
+    <string name="choose_email_client">Choose email client</string>
+
+    <string name="key_api_base">api_base</string>
+    <string name="key_admin_pass">admin_pass_hash</string>
+    <string name="key_manage_user">admin_manage_user</string>
+
+    <string name="summary_api_base">Enter Api Base url without trailing slash.</string>
+    <string name="summary_admin_pass">Set admin password to protect this page and other admin functionality.</string>
+
+    <string name="key_send_feedback">key_send_feedback</string>
+</resources>
