@@ -3,10 +3,10 @@
     package="com.codeian.employeeattendance">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.NFC" />
 
     <application
         android:name=".MyApp"
-        android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
@@ -46,7 +46,16 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.codeian.employeeattendance.EmployeeListActivity" />
         </activity>
-        <activity android:name=".ActivityManageUser"></activity>
+        <activity android:name=".ActivityManageUser" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".SettingsPrefActivity" />
+        </activity>
+        <activity android:name=".ActivitySingleUser">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ActivityManageUser" />
+        </activity>
     </application>
 
 </manifest>

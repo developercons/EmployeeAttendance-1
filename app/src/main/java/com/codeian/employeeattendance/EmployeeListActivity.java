@@ -263,17 +263,18 @@ public class EmployeeListActivity extends AppCompatActivity {
 //
 //        }
 
+        @NonNull
         @Override
-        public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
             View view = LayoutInflater.from(parent.getContext())
                     .inflate(R.layout.employee_list_content, parent, false);
             return new ViewHolder(view);
         }
 
-        public void updateAdapterData(List<EmployeeList> newlist) {
-            mValues = newlist;
-            this.notifyDataSetChanged();
-        }
+//        public void updateAdapterData(List<EmployeeList> newlist) {
+//            mValues = newlist;
+//            this.notifyDataSetChanged();
+//        }
 
         @Override
         public void onBindViewHolder(final ViewHolder holder, int position) {

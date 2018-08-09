@@ -37,4 +37,7 @@
     <string name="summary_admin_pass">Set admin password to protect this page and other admin functionality.</string>
 
     <string name="key_send_feedback">key_send_feedback</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
